@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AF30989193E621200031EDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF30988193E621200031EDA /* AppDelegate.swift */; };
+		5AF3098B193E621200031EDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3098A193E621200031EDA /* ViewController.swift */; };
+		5AF3098E193E621200031EDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF3098C193E621200031EDA /* Main.storyboard */; };
+		5AF30990193E621200031EDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF3098F193E621200031EDA /* Images.xcassets */; };
+		5AF3099C193E621200031EDA /* SchnellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3099B193E621200031EDA /* SchnellTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AF30996193E621200031EDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AF30982193E621200031EDA;
+			remoteInfo = Schnell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5AF30983193E621200031EDA /* Schnell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schnell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF30987193E621200031EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AF30988193E621200031EDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AF3098A193E621200031EDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AF3098D193E621200031EDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AF3098F193E621200031EDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5AF30995193E621200031EDA /* SchnellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchnellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF3099A193E621200031EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AF3099B193E621200031EDA /* SchnellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchnellTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AF30980193E621200031EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AF30992193E621200031EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AF3097A193E621200031EDA = {
+			isa = PBXGroup;
+			children = (
+				5AF30985193E621200031EDA /* Schnell */,
+				5AF30998193E621200031EDA /* SchnellTests */,
+				5AF30984193E621200031EDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AF30984193E621200031EDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AF30983193E621200031EDA /* Schnell.app */,
+				5AF30995193E621200031EDA /* SchnellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AF30985193E621200031EDA /* Schnell */ = {
+			isa = PBXGroup;
+			children = (
+				5AF30988193E621200031EDA /* AppDelegate.swift */,
+				5AF3098A193E621200031EDA /* ViewController.swift */,
+				5AF3098C193E621200031EDA /* Main.storyboard */,
+				5AF3098F193E621200031EDA /* Images.xcassets */,
+				5AF30986193E621200031EDA /* Supporting Files */,
+			);
+			path = Schnell;
+			sourceTree = "<group>";
+		};
+		5AF30986193E621200031EDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AF30987193E621200031EDA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AF30998193E621200031EDA /* SchnellTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AF3099B193E621200031EDA /* SchnellTests.swift */,
+				5AF30999193E621200031EDA /* Supporting Files */,
+			);
+			path = SchnellTests;
+			sourceTree = "<group>";
+		};
+		5AF30999193E621200031EDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AF3099A193E621200031EDA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AF30982193E621200031EDA /* Schnell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AF3099F193E621200031EDA /* Build configuration list for PBXNativeTarget "Schnell" */;
+			buildPhases = (
+				5AF3097F193E621200031EDA /* Sources */,
+				5AF30980193E621200031EDA /* Frameworks */,
+				5AF30981193E621200031EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Schnell;
+			productName = Schnell;
+			productReference = 5AF30983193E621200031EDA /* Schnell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AF30994193E621200031EDA /* SchnellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AF309A2193E621200031EDA /* Build configuration list for PBXNativeTarget "SchnellTests" */;
+			buildPhases = (
+				5AF30991193E621200031EDA /* Sources */,
+				5AF30992193E621200031EDA /* Frameworks */,
+				5AF30993193E621200031EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AF30997193E621200031EDA /* PBXTargetDependency */,
+			);
+			name = SchnellTests;
+			productName = SchnellTests;
+			productReference = 5AF30995193E621200031EDA /* SchnellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AF3097B193E621200031EDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Morten Bøgh";
+				TargetAttributes = {
+					5AF30982193E621200031EDA = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					5AF30994193E621200031EDA = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5AF30982193E621200031EDA;
+					};
+				};
+			};
+			buildConfigurationList = 5AF3097E193E621200031EDA /* Build configuration list for PBXProject "Schnell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AF3097A193E621200031EDA;
+			productRefGroup = 5AF30984193E621200031EDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AF30982193E621200031EDA /* Schnell */,
+				5AF30994193E621200031EDA /* SchnellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AF30981193E621200031EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF3098E193E621200031EDA /* Main.storyboard in Resources */,
+				5AF30990193E621200031EDA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AF30993193E621200031EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AF3097F193E621200031EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF3098B193E621200031EDA /* ViewController.swift in Sources */,
+				5AF30989193E621200031EDA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AF30991193E621200031EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF3099C193E621200031EDA /* SchnellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AF30997193E621200031EDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AF30982193E621200031EDA /* Schnell */;
+			targetProxy = 5AF30996193E621200031EDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AF3098C193E621200031EDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AF3098D193E621200031EDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AF3099D193E621200031EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AF3099E193E621200031EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AF309A0193E621200031EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Schnell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AF309A1193E621200031EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Schnell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5AF309A3193E621200031EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Schnell.app/Schnell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SchnellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		5AF309A4193E621200031EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Schnell.app/Schnell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SchnellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AF3097E193E621200031EDA /* Build configuration list for PBXProject "Schnell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF3099D193E621200031EDA /* Debug */,
+				5AF3099E193E621200031EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AF3099F193E621200031EDA /* Build configuration list for PBXNativeTarget "Schnell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF309A0193E621200031EDA /* Debug */,
+				5AF309A1193E621200031EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5AF309A2193E621200031EDA /* Build configuration list for PBXNativeTarget "SchnellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF309A3193E621200031EDA /* Debug */,
+				5AF309A4193E621200031EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AF3097B193E621200031EDA /* Project object */;
+}
