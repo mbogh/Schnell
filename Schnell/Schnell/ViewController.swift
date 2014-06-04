@@ -14,9 +14,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         var names: String[] = ["John", "Steve", "Tim"]
-        println(names);
-        names = names.map({ name in name.lowercaseString })
-        println(names);
+        println(names)
+        names = names.map{ name in name.lowercaseString }
+        println(names)
+        
+        let numbers: Int[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        println(numbers)
+        let number = numbers.reduce(0){ previous, next in previous + next }
+        println(number)
+        
+        var moreNumbers: Int[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        println(moreNumbers)
+        moreNumbers = moreNumbers.filter{ number in number % 2 == 0 }
+        println(moreNumbers)
     }
 
 }
