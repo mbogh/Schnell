@@ -9,12 +9,11 @@
 import UIKit
 
 class SectionsViewController: UITableViewController {
-    var sections = ["","","",""]
+    var viewModel = SectionsViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 
     // #pragma mark - UITableViewDataSource
 
@@ -23,7 +22,7 @@ class SectionsViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.sections.count
+        return self.viewModel.sections.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
