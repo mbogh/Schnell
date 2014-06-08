@@ -14,6 +14,7 @@ class SectionsViewModel {
     
     func activate() {
         self.isActivated = true
+        sections = ["", "","",""]
         // Download stuff.
     }
 }
