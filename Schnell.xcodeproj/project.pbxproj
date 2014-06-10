@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A164EB41947A82C009E0F40 /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A164EB31947A82C009E0F40 /* sections.json */; };
 		5A3B252B19422C5A00838EF4 /* OD3API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252A19422C5A00838EF4 /* OD3API.swift */; };
 		5A3B252E194397EA00838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
 		5A3B253019439AA400838EF4 /* SectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A164EB31947A82C009E0F40 /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sections.json; sourceTree = "<group>"; };
 		5A3B252A19422C5A00838EF4 /* OD3API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OD3API.swift; sourceTree = "<group>"; };
 		5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewModel.swift; sourceTree = "<group>"; };
 		5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A164EB21947A82C009E0F40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A164EB31947A82C009E0F40 /* sections.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5A3B252919422BCB00838EF4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				5A3B252919422BCB00838EF4 /* Models */,
+				5A164EB21947A82C009E0F40 /* Resources */,
 				5AE8A54A1940F05100471532 /* ViewControllers */,
 				5A3B252C194397C100838EF4 /* ViewModels */,
 				5A3B25321945000100838EF4 /* Views */,
@@ -233,6 +244,7 @@
 			files = (
 				5AF3098E193E621200031EDA /* Main.storyboard in Resources */,
 				5AF30990193E621200031EDA /* Images.xcassets in Resources */,
+				5A164EB41947A82C009E0F40 /* sections.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
