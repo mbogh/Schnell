@@ -14,42 +14,39 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionCell" rowHeight="100" id="zk5-F5-hZ4" customClass="SectionCell" customModule="Schnell" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionCell" rowHeight="75" id="e3u-en-Q8h" customClass="SectionCell" customModule="Schnell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk5-F5-hZ4" id="CcV-yN-51F">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e3u-en-Q8h" id="kUD-59-I0C">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skanderborgvej 105-210" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="204" translatesAutoresizingMaskIntoConstraints="NO" id="Tm3-xu-tAd">
-                                            <rect key="frame" x="20" y="15" width="204" height="47"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="450" placeholderIntrinsicHeight="20" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVF-AO-fms" userLabel="Address Label">
+                                            <rect key="frame" x="15" y="10" width="450" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="8260 Aarhus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oo6-At-71N">
-                                            <rect key="frame" x="20" y="67" width="204" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="132" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqZ-Cw-Dc6">
-                                            <rect key="frame" x="244" y="28" width="216" height="43"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="450" placeholderIntrinsicHeight="14" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5y-BY-aZb" userLabel="Zipcode/City Label">
+                                            <rect key="frame" x="15" y="50" width="450" height="14"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Oo6-At-71N" firstAttribute="leading" secondItem="CcV-yN-51F" secondAttribute="leading" constant="20" id="4z0-n4-257"/>
-                                        <constraint firstAttribute="centerY" secondItem="WqZ-Cw-Dc6" secondAttribute="centerY" id="7Tg-Tb-Yo8"/>
-                                        <constraint firstItem="Tm3-xu-tAd" firstAttribute="leading" secondItem="CcV-yN-51F" secondAttribute="leading" constant="20" id="B2d-pV-N0h"/>
-                                        <constraint firstItem="Tm3-xu-tAd" firstAttribute="top" secondItem="CcV-yN-51F" secondAttribute="top" constant="15" id="M5G-vf-W7e"/>
-                                        <constraint firstAttribute="bottom" secondItem="Oo6-At-71N" secondAttribute="bottom" constant="15" id="PXZ-Cw-wLb"/>
-                                        <constraint firstItem="WqZ-Cw-Dc6" firstAttribute="leading" secondItem="Tm3-xu-tAd" secondAttribute="trailing" constant="20" id="lg2-cm-RdC"/>
-                                        <constraint firstItem="WqZ-Cw-Dc6" firstAttribute="leading" secondItem="Oo6-At-71N" secondAttribute="trailing" constant="20" id="r3L-z0-ufe"/>
-                                        <constraint firstAttribute="trailing" secondItem="WqZ-Cw-Dc6" secondAttribute="trailing" constant="20" id="sjO-vO-6VB"/>
-                                        <constraint firstItem="Oo6-At-71N" firstAttribute="top" secondItem="Tm3-xu-tAd" secondAttribute="bottom" constant="5" id="x0d-YQ-Kio"/>
+                                        <constraint firstAttribute="trailing" secondItem="JVF-AO-fms" secondAttribute="trailing" constant="15" id="0qr-Zo-D3g"/>
+                                        <constraint firstItem="j5y-BY-aZb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JVF-AO-fms" secondAttribute="bottom" constant="10" id="BzG-Mq-U3F"/>
+                                        <constraint firstAttribute="bottom" secondItem="j5y-BY-aZb" secondAttribute="bottom" constant="10" id="RJ2-Ku-KGz"/>
+                                        <constraint firstAttribute="trailing" secondItem="j5y-BY-aZb" secondAttribute="trailing" constant="15" id="SvO-op-eXi"/>
+                                        <constraint firstItem="JVF-AO-fms" firstAttribute="leading" secondItem="kUD-59-I0C" secondAttribute="leading" constant="15" id="Uhe-TT-Tbx"/>
+                                        <constraint firstItem="JVF-AO-fms" firstAttribute="top" secondItem="kUD-59-I0C" secondAttribute="top" constant="10" id="cFS-Wb-G3J"/>
+                                        <constraint firstItem="j5y-BY-aZb" firstAttribute="leading" secondItem="kUD-59-I0C" secondAttribute="leading" constant="15" id="poJ-Ro-9WH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="JVF-AO-fms" id="oM7-jF-dV7"/>
+                                    <outlet property="zipcodeCityLabel" destination="j5y-BY-aZb" id="VY7-mh-Zog"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -14,9 +14,8 @@ class SectionsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = SectionCell.estimatedHeight()
-        self.tableView.rowHeight = SectionCell.estimatedHeight()
-        
         
         viewModel.activate()
         self.tableView.reloadData()
@@ -34,6 +33,8 @@ class SectionsViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SectionCell") as SectionCell
+        cell.addressLabel.text = "Skanderborgvej 127 - 204"
+        cell.zipcodeCityLabel.text = "8260 Aarhus N"
         return cell
     }
     
