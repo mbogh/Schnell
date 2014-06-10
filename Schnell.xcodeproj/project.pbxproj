@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A164EB11947A228009E0F40 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A164EB01947A228009E0F40 /* Section.swift */; };
 		5A164EB41947A82C009E0F40 /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A164EB31947A82C009E0F40 /* sections.json */; };
 		5A3B252B19422C5A00838EF4 /* OD3API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252A19422C5A00838EF4 /* OD3API.swift */; };
 		5A3B252E194397EA00838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A164EB01947A228009E0F40 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		5A164EB31947A82C009E0F40 /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sections.json; sourceTree = "<group>"; };
 		5A3B252A19422C5A00838EF4 /* OD3API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OD3API.swift; sourceTree = "<group>"; };
 		5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewModel.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				5A3B252A19422C5A00838EF4 /* OD3API.swift */,
+				5A164EB01947A228009E0F40 /* Section.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				5AF30989193E621200031EDA /* AppDelegate.swift in Sources */,
 				5AE8A54C1940F47D00471532 /* SectionsViewController.swift in Sources */,
 				5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */,
+				5A164EB11947A228009E0F40 /* Section.swift in Sources */,
 				5A3B252E194397EA00838EF4 /* SectionsViewModel.swift in Sources */,
 				5A3B252B19422C5A00838EF4 /* OD3API.swift in Sources */,
 			);
