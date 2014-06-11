@@ -45,13 +45,25 @@ struct Section {
         let zipcode: String
         let city: String
         let country: String
+        
+        init(data: Dictionary<String, AnyObject>, pointID: Int) {
+            self.name = data["POINT_\(pointID)_NAME"] as String!
+            self.street = data["POINT_\(pointID)_STREET"] as String!
+            self.streetNumber = data["POINT_\(pointID)_STREET_NUMBER"] as String!
+            self.latitude = data["POINT_\(pointID)_LAT"] as Float!
+            self.longtitude = data["POINT_\(pointID)_LNG"] as Float!
+            self.zipcode = data["POINT_\(pointID)_POSTAL_CODE"] as String!
+            self.city = data["POINT_\(pointID)_CITY"] as String!
+            self.country = data["POINT_\(pointID)_COUNTRY"] as String!
+        }
     }
-    var id: Int?
-    let startPoint: Point?
-    let endPoint: Point?
+    var id: Int
+    let startPoint: Point
+    let endPoint: Point
     
     init(data: Dictionary<String, AnyObject>) {
         self.id = data["_id"] as Int!
-        
+        self.startPoint = Point(data: data, pointID:1)
+        self.endPoint = Point(data:data, pointID:2)
     }
 }
