@@ -68,7 +68,7 @@ struct RoadSection {
         self.endPoint = RoadSectionPoint(data: data, pointID: 2)
     }
     
-    func name() -> String {
+    var name: String {
         if self.startPoint.street == self.endPoint.street {
             return "\(self.startPoint.street) \(self.startPoint.streetNumber) - \(self.endPoint.streetNumber)"
         }
@@ -77,7 +77,7 @@ struct RoadSection {
         }
     }
     
-    func zipcodeCity() -> String {
+    var zipcodeCity: String {
         if self.startPoint.city == self.endPoint.city {
             return "\(self.startPoint.zipcode) \(self.startPoint.city)"
         }

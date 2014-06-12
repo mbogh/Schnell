@@ -36,8 +36,8 @@ class SectionsViewController: UITableViewController {
         
         let roadSection = self.viewModel.sections[indexPath.row]
         
-        cell.addressLabel.text = roadSection.name()
-        cell.zipcodeCityLabel.text = roadSection.zipcodeCity()
+        cell.addressLabel.text = roadSection.name
+        cell.zipcodeCityLabel.text = roadSection.zipcodeCity
         return cell
     }
     
