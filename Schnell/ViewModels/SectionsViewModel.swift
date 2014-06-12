@@ -9,12 +9,25 @@
 import Foundation
 
 class SectionsViewModel {
-    var sections = []
+    var sections: RoadSection[] = []
     var isActivated = false
     
     func activate() {
         self.isActivated = true
-        sections = ["", "","",""]
-        // Download stuff.
+        
+        let reponseData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("sections", ofType: "json"))
+        let error: NSErrorPointer?
+        
+        if let response = NSJSONSerialization.JSONObjectWithData(reponseData, options: NSJSONReadingOptions(), error: error!) as? NSDictionary {
+            if let result = response["result"] as? NSDictionary {
+                if let records = result["records"] as? NSArray {
+                    for (var i = 0; i < records.count; i++) {
+                        let record = records[i] as NSDictionary
+                        let roadSection = RoadSection(data:record)
+                        sections.append(roadSection)
+                    }
+                }
+            }
+        }        
     }
 }
