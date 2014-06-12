@@ -33,8 +33,11 @@ class SectionsViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SectionCell") as SectionCell
-        cell.addressLabel.text = "Skanderborgvej 127 - 204"
-        cell.zipcodeCityLabel.text = "8260 Aarhus N"
+        
+        let roadSection = self.viewModel.sections[indexPath.row]
+        
+        cell.addressLabel.text = roadSection.name()
+        cell.zipcodeCityLabel.text = roadSection.zipcodeCity()
         return cell
     }
     
