@@ -63,7 +63,6 @@ struct RoadSection {
     let endPoint: RoadSectionPoint
     
     init(data: NSDictionary) {
-        println(data);
         self.id = data["_id"] as Int
         self.startPoint = RoadSectionPoint(data: data, pointID: 1)
         self.endPoint = RoadSectionPoint(data: data, pointID: 2)
