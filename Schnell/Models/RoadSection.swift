@@ -69,8 +69,22 @@ struct RoadSection {
     }
     
     var name: String {
-        if self.startPoint.street == self.endPoint.street {
-            return "\(self.startPoint.street) \(self.startPoint.streetNumber) - \(self.endPoint.streetNumber)"
+        if self.startPoint.street == self.endPoint.street || (self.startPoint.street == nil || self.endPoint.street == nil) {
+            let street = self.startPoint.street ? self.startPoint.street : self.endPoint.street
+            var startNumber = 0, endNumber = 0
+            if let start = self.startPoint.streetNumber?.toInt() {
+                startNumber = start > 0 ? start : 1
+            }
+            if let end = self.endPoint.streetNumber?.toInt() {
+                endNumber = end > 0 ? end : 1
+            }
+            
+            if (startNumber < endNumber) {
+                return "\(street) \(startNumber) - \(endNumber)"
+            }
+            else {
+                return "\(street) \(endNumber) - \(startNumber)"
+            }
         }
         else {
             return "\(self.startPoint.street) \(self.startPoint.streetNumber) - \(self.endPoint.street) \(self.endPoint.streetNumber)"
