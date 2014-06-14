@@ -43,5 +43,12 @@ class RoadSectionPointTests: XCTestCase {
         roadSectionPoint = RoadSectionPoint(data: data, pointID: id)
         XCTAssertNotEqual(roadSectionPoint.type, .Route, "Street names not containing only digits should not be of type .Route")
     }
+    
+    func testRoadTypeWithDefault() {
+        let id = 1
+        var data = NSDictionary(objects: ["Test Road", "42"], forKeys:["POINT_1_STREET", "POINT_1_STREET_NUMBER"])
+        var roadSectionPoint = RoadSectionPoint(data: data, pointID: id)
+        XCTAssertEqual(roadSectionPoint.type, .Road, "Street names not containing only digits and not containing motorvej should be of type .Road")
+    }
 
 }
