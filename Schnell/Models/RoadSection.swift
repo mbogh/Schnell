@@ -34,29 +34,13 @@ import Foundation
 //    "POINT_1_STREET_NUMBER": "72",
 //    "_id": 160
 
+enum RoadType {
+    case Road
+    case Highway
+    case Route
+}
 
 struct RoadSection {
-    struct RoadSectionPoint {
-        let name: String?
-        let street: String?
-        let streetNumber: String?
-        let latitude: String?
-        let longitude: String?
-        let zipcode: String?
-        let city: String?
-        let country: String?
-        
-        init(data: NSDictionary, pointID: Int) {
-            self.name = data["POINT_\(pointID)_NAME"] as? String
-            self.street = data["POINT_\(pointID)_STREET"] as? String
-            self.streetNumber = data["POINT_\(pointID)_STREET_NUMBER"] as? String
-            self.latitude = data["POINT_\(pointID)_LAT"] as? String
-            self.longitude = data["POINT_\(pointID)_LNG"] as? String
-            self.zipcode = data["POINT_\(pointID)_POSTAL_CODE"] as? String
-            self.city = data["POINT_\(pointID)_CITY"] as? String
-            self.country = data["POINT_\(pointID)_COUNTRY"] as? String
-        }
-    }
     
     var id: Int
     let startPoint: RoadSectionPoint
@@ -98,5 +82,37 @@ struct RoadSection {
         else {
             return "\(self.startPoint.zipcode) \(self.startPoint.city) - \(self.endPoint.zipcode) \(self.endPoint.city)"
         }
+    }
+}
+
+struct RoadSectionPoint {
+    let name: String?
+    let street: String?
+    let streetNumber: String?
+    let latitude: String?
+    let longitude: String?
+    let zipcode: String?
+    let city: String?
+    let country: String?
+    
+    let type: RoadType
+    
+    init(data: NSDictionary, pointID: Int) {
+        self.name = data["POINT_\(pointID)_NAME"] as? String
+        self.street = data["POINT_\(pointID)_STREET"] as? String
+        self.streetNumber = data["POINT_\(pointID)_STREET_NUMBER"] as? String
+        self.latitude = data["POINT_\(pointID)_LAT"] as? String
+        self.longitude = data["POINT_\(pointID)_LNG"] as? String
+        self.zipcode = data["POINT_\(pointID)_POSTAL_CODE"] as? String
+        self.city = data["POINT_\(pointID)_CITY"] as? String
+        self.country = data["POINT_\(pointID)_COUNTRY"] as? String
+        
+        if self.street?.lowercaseString.rangeOfString("motorvej") {
+            type = .Highway
+        }
+        else {
+            type = .Road
+        }
+        
     }
 }

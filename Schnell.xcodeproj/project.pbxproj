@@ -16,6 +16,7 @@
 		5A3B253119439AF100838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
 		5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B25331945001C00838EF4 /* SectionCell.swift */; };
 		5AC2D9CC194A4653002A5965 /* RoadSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */; };
+		5AD6B892194CDE570092F41E /* RoadSectionPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */; };
 		5AE8A54C1940F47D00471532 /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8A54B1940F47D00471532 /* SectionsViewController.swift */; };
 		5AF30989193E621200031EDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF30988193E621200031EDA /* AppDelegate.swift */; };
 		5AF3098E193E621200031EDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF3098C193E621200031EDA /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
 		5A3B25331945001C00838EF4 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionTests.swift; sourceTree = "<group>"; };
+		5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionPointTests.swift; sourceTree = "<group>"; };
 		5AE8A54B1940F47D00471532 /* SectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
 		5AF30983193E621200031EDA /* Schnell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schnell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF30987193E621200031EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				5AF30999193E621200031EDA /* Supporting Files */,
 				5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */,
 				5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */,
+				5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */,
 			);
 			path = SchnellTests;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A164EB51948FFAC009E0F40 /* RoadSection.swift in Sources */,
+				5AD6B892194CDE570092F41E /* RoadSectionPointTests.swift in Sources */,
 				5A3B253019439AA400838EF4 /* SectionViewModelTests.swift in Sources */,
 				5A3B253119439AF100838EF4 /* SectionsViewModel.swift in Sources */,
 				5AC2D9CC194A4653002A5965 /* RoadSectionTests.swift in Sources */,
