@@ -23,6 +23,25 @@ class RoadSectionPointTests: XCTestCase {
         data = NSDictionary(objects: ["Test MOTORVejz", "42"], forKeys:["POINT_1_STREET", "POINT_1_STREET_NUMBER"])
         roadSectionPoint = RoadSectionPoint(data: data, pointID: id)
         XCTAssertEqual(roadSectionPoint.type, .Highway, "Street names containing Motorvej should be of type .Highway")
+        
+        data = NSDictionary(objects: ["Test MOTORVe", "42"], forKeys:["POINT_1_STREET", "POINT_1_STREET_NUMBER"])
+        roadSectionPoint = RoadSectionPoint(data: data, pointID: id)
+        XCTAssertNotEqual(roadSectionPoint.type, .Highway, "Street names not containing Motorvej should not be of type .Highway")
+    }
+    
+    func testRoadTypeWithRoute() {
+        let id = 1
+        var data = NSDictionary(objects: ["15", "42"], forKeys:["POINT_1_STREET", "POINT_1_STREET_NUMBER"])
+        var roadSectionPoint = RoadSectionPoint(data: data, pointID: id)
+        XCTAssertEqual(roadSectionPoint.type, .Route, "Street names containing only digits should be of type .Route")
+        
+        data = NSDictionary(objects: ["505", "42"], forKeys:["POINT_1_STREET", "POINT_1_STREET_NUMBER"])
+        roadSectionPoint = RoadSectionPoint(data: data, pointID: id)
+        XCTAssertEqual(roadSectionPoint.type, .Route, "Street names containing only digits should be of type .Route")
+        
+        data = NSDictionary(objects: ["F505", "42"], forKeys:["POINT_1_STREET", "POINT_1_STREET_NUMBER"])
+        roadSectionPoint = RoadSectionPoint(data: data, pointID: id)
+        XCTAssertNotEqual(roadSectionPoint.type, .Route, "Street names not containing only digits should not be of type .Route")
     }
 
 }
