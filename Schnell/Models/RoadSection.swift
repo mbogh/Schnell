@@ -107,20 +107,15 @@ struct RoadSectionPoint {
         self.city = data["POINT_\(pointID)_CITY"] as? String
         self.country = data["POINT_\(pointID)_COUNTRY"] as? String
         
-        if let streetName = self.street {
-            if streetName.lowercaseString.bridgeToObjectiveC().containsString("motorvej") {
-                type = .Highway
-            }
-            else if let route = self.street?.toInt() {
-                type = .Route
-            }
-            else {
-                type = .Road
-            }
-        }
-        else {
+        switch self.street {
+        case .None:
             type = .Road
-        }
-        
+        case let streetName where streetName!.lowercaseString.bridgeToObjectiveC().containsString("motorvej"):
+            type = .Highway
+        case let streetName where streetName!.toInt():
+            type = .Route
+        default:
+            type = .Road
+        }        
     }
 }
