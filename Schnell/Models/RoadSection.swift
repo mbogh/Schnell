@@ -53,8 +53,17 @@ struct RoadSection {
     }
     
     var name: String {
-        if self.startPoint.street == self.endPoint.street || (self.startPoint.street == nil || self.endPoint.street == nil) {
-            let street = self.startPoint.street ? self.startPoint.street : self.endPoint.street
+    
+    if self.startPoint.isEqualStreet(self.endPoint) {
+        let street = self.startPoint.street ? self.startPoint.street : self.endPoint.street
+        let type = self.startPoint.street ? self.startPoint.type : self.endPoint.type
+        
+        switch type {
+        case .Highway:
+            return "\(street)"
+        case .Route:
+            return "\(street)"
+        case .Road:
             var startNumber = 0, endNumber = 0
             if let start = self.startPoint.streetNumber?.toInt() {
                 startNumber = start > 0 ? start : 1
@@ -69,18 +78,21 @@ struct RoadSection {
             else {
                 return "\(street) \(endNumber) - \(startNumber)"
             }
+        default:
+            return "\(street) \(self.startPoint.streetNumber) - \(self.endPoint.streetNumber)"
         }
-        else {
-            return "\(self.startPoint.street) \(self.startPoint.streetNumber) - \(self.endPoint.street) \(self.endPoint.streetNumber)"
+    }
+    else {
+        return "\(self.startPoint.street) \(self.startPoint.streetNumber) - \(self.endPoint.street) \(self.endPoint.streetNumber)"
         }
     }
     
     var zipcodeCity: String {
-        if self.startPoint.city == self.endPoint.city {
-            return "\(self.startPoint.zipcode) \(self.startPoint.city)"
-        }
-        else {
-            return "\(self.startPoint.zipcode) \(self.startPoint.city) - \(self.endPoint.zipcode) \(self.endPoint.city)"
+    if self.startPoint.city == self.endPoint.city {
+        return "\(self.startPoint.zipcode) \(self.startPoint.city)"
+    }
+    else {
+        return "\(self.startPoint.zipcode) \(self.startPoint.city) - \(self.endPoint.zipcode) \(self.endPoint.city)"
         }
     }
 }
@@ -116,6 +128,10 @@ struct RoadSectionPoint {
             type = .Route
         default:
             type = .Road
-        }        
+        }
+    }
+    
+    func isEqualStreet(other: RoadSectionPoint) -> Bool {
+        return self.street == other.street || (self.street == nil || other.street == nil)
     }
 }
