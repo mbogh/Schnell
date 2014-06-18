@@ -82,8 +82,8 @@ struct RoadSection {
             return "\(street) \(self.startPoint.streetNumber) - \(self.endPoint.streetNumber)"
         }
     }
-    else {
-        return "\(self.startPoint.street) \(self.startPoint.streetNumber) - \(self.endPoint.street) \(self.endPoint.streetNumber)"
+    else { // By design of .isEqualStreet() we know that both streets are non-nil.
+        return "\(self.startPoint.name) - \(self.endPoint.name)"
         }
     }
     
@@ -98,7 +98,6 @@ struct RoadSection {
 }
 
 struct RoadSectionPoint {
-    let name: String?
     let street: String?
     let streetNumber: String?
     let latitude: String?
@@ -110,7 +109,6 @@ struct RoadSectionPoint {
     let type: RoadType
     
     init(data: NSDictionary, pointID: Int) {
-        self.name = data["POINT_\(pointID)_NAME"] as? String
         self.street = data["POINT_\(pointID)_STREET"] as? String
         self.streetNumber = data["POINT_\(pointID)_STREET_NUMBER"] as? String
         self.latitude = data["POINT_\(pointID)_LAT"] as? String
@@ -133,5 +131,14 @@ struct RoadSectionPoint {
     
     func isEqualStreet(other: RoadSectionPoint) -> Bool {
         return self.street == other.street || (self.street == nil || other.street == nil)
+    }
+    
+    var name: String {
+        switch self.type {
+        case .Road:
+            return "\(self.street) \(self.streetNumber)"
+        default:
+            return "\(self.street)"
+        }
     }
 }
