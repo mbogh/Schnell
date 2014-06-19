@@ -9,7 +9,7 @@
 import Foundation
 
 class SectionsViewModel {
-    var sections: RoadSection[] = []
+    var sections = RoadSection[]()
     var isActivated = false
     
     func activate() {
