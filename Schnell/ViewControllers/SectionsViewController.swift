@@ -10,6 +10,7 @@ import UIKit
 
 class SectionsViewController: UITableViewController {
     var viewModel = SectionsViewModel()
+    var favoriteSections = Int[]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +39,28 @@ class SectionsViewController: UITableViewController {
         
         cell.addressLabel.text = roadSection.name
         cell.zipcodeCityLabel.text = roadSection.zipcodeCity
+        
+        if contains(favoriteSections, roadSection.id) {
+            cell.accessoryType = .Checkmark
+        }
+        else {
+            cell.accessoryType = .None
+        }
+        
         return cell
     }
     
     // #pragma mark - UITableViewDelegate
     
     override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        let roadSection = self.viewModel.sections[indexPath.row]
+        if let index = find(favoriteSections, roadSection.id) {
+            favoriteSections.removeAtIndex(index)
+        }
+        else {
+            favoriteSections.append(roadSection.id)
+        }
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
