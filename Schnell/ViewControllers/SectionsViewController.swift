@@ -40,12 +40,7 @@ class SectionsViewController: UITableViewController {
         cell.addressLabel.text = roadSection.name
         cell.zipcodeCityLabel.text = roadSection.zipcodeCity
         
-        if contains(favoriteSections, roadSection.id) {
-            cell.accessoryType = .Checkmark
-        }
-        else {
-            cell.accessoryType = .None
-        }
+        cell.accessoryType = contains(favoriteSections, roadSection.id) ? .Checkmark : .None
         
         return cell
     }
