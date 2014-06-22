@@ -32,7 +32,7 @@ class SectionsViewController: UITableViewController {
         return self.viewModel.sections.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         let cell = tableView.dequeueReusableCellWithIdentifier("SectionCell") as SectionCell
         
         let roadSection = self.viewModel.sections[indexPath.row]
