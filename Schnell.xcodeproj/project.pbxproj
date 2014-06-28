@@ -16,6 +16,10 @@
 		5A3B253119439AF100838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
 		5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B25331945001C00838EF4 /* SectionCell.swift */; };
 		5AC2D9CC194A4653002A5965 /* RoadSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */; };
+		5ACC870E195F587E00B73555 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACC870D195F587E00B73555 /* NotificationCenter.framework */; };
+		5ACC8713195F587E00B73555 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACC8712195F587E00B73555 /* TodayViewController.swift */; };
+		5ACC8715195F587E00B73555 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACC8714195F587E00B73555 /* MainInterface.storyboard */; };
+		5ACC8718195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */; };
 		5AD6B892194CDE570092F41E /* RoadSectionPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */; };
 		5AE8A54C1940F47D00471532 /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8A54B1940F47D00471532 /* SectionsViewController.swift */; };
 		5AF30989193E621200031EDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF30988193E621200031EDA /* AppDelegate.swift */; };
@@ -24,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5ACC8716195F587E00B73555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ACC870A195F587E00B73555;
+			remoteInfo = "Schnell Today Widget";
+		};
+		5ACC8719195F587E00B73555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ACC870A195F587E00B73555;
+			remoteInfo = "Schnell Today Widget";
+		};
 		5AF30996193E621200031EDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
@@ -33,6 +51,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5ACC871E195F587E00B73555 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5ACC8718195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5A164EB01947A228009E0F40 /* RoadSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSection.swift; sourceTree = "<group>"; };
 		5A164EB31947A82C009E0F40 /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sections.json; sourceTree = "<group>"; };
@@ -41,6 +73,11 @@
 		5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
 		5A3B25331945001C00838EF4 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionTests.swift; sourceTree = "<group>"; };
+		5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "com.justabeech.Schnell.Schnell-Today-Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACC870D195F587E00B73555 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5ACC8711195F587E00B73555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ACC8712195F587E00B73555 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		5ACC8714195F587E00B73555 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionPointTests.swift; sourceTree = "<group>"; };
 		5AE8A54B1940F47D00471532 /* SectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
 		5AF30983193E621200031EDA /* Schnell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schnell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +90,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5ACC8708195F587E00B73555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACC870E195F587E00B73555 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF30980193E621200031EDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +148,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		5ACC870C195F587E00B73555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ACC870D195F587E00B73555 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5ACC870F195F587E00B73555 /* Schnell Today Widget */ = {
+			isa = PBXGroup;
+			children = (
+				5ACC8712195F587E00B73555 /* TodayViewController.swift */,
+				5ACC8714195F587E00B73555 /* MainInterface.storyboard */,
+				5ACC8710195F587E00B73555 /* Supporting Files */,
+			);
+			path = "Schnell Today Widget";
+			sourceTree = "<group>";
+		};
+		5ACC8710195F587E00B73555 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ACC8711195F587E00B73555 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5AE8A54A1940F05100471532 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +187,8 @@
 			children = (
 				5AF30985193E621200031EDA /* Schnell */,
 				5AF30998193E621200031EDA /* SchnellTests */,
+				5ACC870F195F587E00B73555 /* Schnell Today Widget */,
+				5ACC870C195F587E00B73555 /* Frameworks */,
 				5AF30984193E621200031EDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +198,7 @@
 			children = (
 				5AF30983193E621200031EDA /* Schnell.app */,
 				5AF30995193E621200031EDA /* SchnellTests.xctest */,
+				5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +249,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5ACC870A195F587E00B73555 /* Schnell Today Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ACC871D195F587E00B73555 /* Build configuration list for PBXNativeTarget "Schnell Today Widget" */;
+			buildPhases = (
+				5ACC8707195F587E00B73555 /* Sources */,
+				5ACC8708195F587E00B73555 /* Frameworks */,
+				5ACC8709195F587E00B73555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Schnell Today Widget";
+			productName = "Schnell Today Widget";
+			productReference = 5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5AF30982193E621200031EDA /* Schnell */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AF3099F193E621200031EDA /* Build configuration list for PBXNativeTarget "Schnell" */;
@@ -182,10 +273,13 @@
 				5AF3097F193E621200031EDA /* Sources */,
 				5AF30980193E621200031EDA /* Frameworks */,
 				5AF30981193E621200031EDA /* Resources */,
+				5ACC871E195F587E00B73555 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5ACC8717195F587E00B73555 /* PBXTargetDependency */,
+				5ACC871A195F587E00B73555 /* PBXTargetDependency */,
 			);
 			name = Schnell;
 			productName = Schnell;
@@ -219,6 +313,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Morten Bøgh";
 				TargetAttributes = {
+					5ACC870A195F587E00B73555 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 					5AF30982193E621200031EDA = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -243,11 +340,20 @@
 			targets = (
 				5AF30982193E621200031EDA /* Schnell */,
 				5AF30994193E621200031EDA /* SchnellTests */,
+				5ACC870A195F587E00B73555 /* Schnell Today Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5ACC8709195F587E00B73555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACC8715195F587E00B73555 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF30981193E621200031EDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +374,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5ACC8707195F587E00B73555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACC8713195F587E00B73555 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF3097F193E621200031EDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +410,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5ACC8717195F587E00B73555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ACC870A195F587E00B73555 /* Schnell Today Widget */;
+			targetProxy = 5ACC8716195F587E00B73555 /* PBXContainerItemProxy */;
+		};
+		5ACC871A195F587E00B73555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ACC870A195F587E00B73555 /* Schnell Today Widget */;
+			targetProxy = 5ACC8719195F587E00B73555 /* PBXContainerItemProxy */;
+		};
 		5AF30997193E621200031EDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5AF30982193E621200031EDA /* Schnell */;
@@ -315,6 +439,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5ACC871B195F587E00B73555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Schnell Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.justabeech.Schnell.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5ACC871C195F587E00B73555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Schnell Today Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.justabeech.Schnell.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		5AF3099D193E621200031EDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -453,6 +603,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5ACC871D195F587E00B73555 /* Build configuration list for PBXNativeTarget "Schnell Today Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ACC871B195F587E00B73555 /* Debug */,
+				5ACC871C195F587E00B73555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5AF3097E193E621200031EDA /* Build configuration list for PBXProject "Schnell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
