@@ -15,6 +15,11 @@
 		5A3B253019439AA400838EF4 /* SectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */; };
 		5A3B253119439AF100838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
 		5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B25331945001C00838EF4 /* SectionCell.swift */; };
+		5AA04C1B1963520F006442D9 /* SchnellKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA04C1A1963520F006442D9 /* SchnellKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AA04C211963520F006442D9 /* SchnellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA04C161963520F006442D9 /* SchnellKit.framework */; };
+		5AA04C281963520F006442D9 /* SchnellKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA04C271963520F006442D9 /* SchnellKitTests.swift */; };
+		5AA04C2B1963520F006442D9 /* SchnellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA04C161963520F006442D9 /* SchnellKit.framework */; };
+		5AA04C2C1963520F006442D9 /* SchnellKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA04C161963520F006442D9 /* SchnellKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		5AC2D9CC194A4653002A5965 /* RoadSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */; };
 		5ACC870E195F587E00B73555 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACC870D195F587E00B73555 /* NotificationCenter.framework */; };
 		5ACC8713195F587E00B73555 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACC8712195F587E00B73555 /* TodayViewController.swift */; };
@@ -28,6 +33,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5AA04C221963520F006442D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA04C151963520F006442D9;
+			remoteInfo = SchnellKit;
+		};
+		5AA04C291963520F006442D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA04C151963520F006442D9;
+			remoteInfo = SchnellKit;
+		};
+		5AA04C2D1963520F006442D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA04C151963520F006442D9;
+			remoteInfo = SchnellKit;
+		};
+		5AA04C3619635210006442D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA04C151963520F006442D9;
+			remoteInfo = SchnellKit;
+		};
 		5ACC8716195F587E00B73555 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
@@ -52,6 +85,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5AA04C341963520F006442D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5AA04C2C1963520F006442D9 /* SchnellKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5ACC871E195F587E00B73555 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +116,12 @@
 		5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewModel.swift; sourceTree = "<group>"; };
 		5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
 		5A3B25331945001C00838EF4 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		5AA04C161963520F006442D9 /* SchnellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SchnellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA04C191963520F006442D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA04C1A1963520F006442D9 /* SchnellKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchnellKit.h; sourceTree = "<group>"; };
+		5AA04C201963520F006442D9 /* SchnellKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchnellKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA04C261963520F006442D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA04C271963520F006442D9 /* SchnellKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchnellKitTests.swift; sourceTree = "<group>"; };
 		5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionTests.swift; sourceTree = "<group>"; };
 		5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "com.justabeech.Schnell.Schnell-Today-Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACC870D195F587E00B73555 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -90,6 +140,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5AA04C121963520F006442D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA04C1D1963520F006442D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA04C211963520F006442D9 /* SchnellKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5ACC8708195F587E00B73555 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA04C2B1963520F006442D9 /* SchnellKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +214,40 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		5AA04C171963520F006442D9 /* SchnellKit */ = {
+			isa = PBXGroup;
+			children = (
+				5AA04C1A1963520F006442D9 /* SchnellKit.h */,
+				5AA04C181963520F006442D9 /* Supporting Files */,
+			);
+			path = SchnellKit;
+			sourceTree = "<group>";
+		};
+		5AA04C181963520F006442D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AA04C191963520F006442D9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AA04C241963520F006442D9 /* SchnellKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA04C271963520F006442D9 /* SchnellKitTests.swift */,
+				5AA04C251963520F006442D9 /* Supporting Files */,
+			);
+			path = SchnellKitTests;
+			sourceTree = "<group>";
+		};
+		5AA04C251963520F006442D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AA04C261963520F006442D9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5ACC870C195F587E00B73555 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +288,8 @@
 				5AF30985193E621200031EDA /* Schnell */,
 				5AF30998193E621200031EDA /* SchnellTests */,
 				5ACC870F195F587E00B73555 /* Schnell Today Widget */,
+				5AA04C171963520F006442D9 /* SchnellKit */,
+				5AA04C241963520F006442D9 /* SchnellKitTests */,
 				5ACC870C195F587E00B73555 /* Frameworks */,
 				5AF30984193E621200031EDA /* Products */,
 			);
@@ -199,6 +301,8 @@
 				5AF30983193E621200031EDA /* Schnell.app */,
 				5AF30995193E621200031EDA /* SchnellTests.xctest */,
 				5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */,
+				5AA04C161963520F006442D9 /* SchnellKit.framework */,
+				5AA04C201963520F006442D9 /* SchnellKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,7 +352,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5AA04C131963520F006442D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA04C1B1963520F006442D9 /* SchnellKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5AA04C151963520F006442D9 /* SchnellKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA04C331963520F006442D9 /* Build configuration list for PBXNativeTarget "SchnellKit" */;
+			buildPhases = (
+				5AA04C111963520F006442D9 /* Sources */,
+				5AA04C121963520F006442D9 /* Frameworks */,
+				5AA04C131963520F006442D9 /* Headers */,
+				5AA04C141963520F006442D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchnellKit;
+			productName = SchnellKit;
+			productReference = 5AA04C161963520F006442D9 /* SchnellKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5AA04C1F1963520F006442D9 /* SchnellKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA04C351963520F006442D9 /* Build configuration list for PBXNativeTarget "SchnellKitTests" */;
+			buildPhases = (
+				5AA04C1C1963520F006442D9 /* Sources */,
+				5AA04C1D1963520F006442D9 /* Frameworks */,
+				5AA04C1E1963520F006442D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA04C231963520F006442D9 /* PBXTargetDependency */,
+				5AA04C3719635210006442D9 /* PBXTargetDependency */,
+			);
+			name = SchnellKitTests;
+			productName = SchnellKitTests;
+			productReference = 5AA04C201963520F006442D9 /* SchnellKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5ACC870A195F587E00B73555 /* Schnell Today Widget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ACC871D195F587E00B73555 /* Build configuration list for PBXNativeTarget "Schnell Today Widget" */;
@@ -274,12 +426,15 @@
 				5AF30980193E621200031EDA /* Frameworks */,
 				5AF30981193E621200031EDA /* Resources */,
 				5ACC871E195F587E00B73555 /* Embed App Extensions */,
+				5AA04C341963520F006442D9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5ACC8717195F587E00B73555 /* PBXTargetDependency */,
 				5ACC871A195F587E00B73555 /* PBXTargetDependency */,
+				5AA04C2A1963520F006442D9 /* PBXTargetDependency */,
+				5AA04C2E1963520F006442D9 /* PBXTargetDependency */,
 			);
 			name = Schnell;
 			productName = Schnell;
@@ -313,6 +468,13 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Morten Bøgh";
 				TargetAttributes = {
+					5AA04C151963520F006442D9 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					5AA04C1F1963520F006442D9 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5AA04C151963520F006442D9;
+					};
 					5ACC870A195F587E00B73555 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -341,11 +503,27 @@
 				5AF30982193E621200031EDA /* Schnell */,
 				5AF30994193E621200031EDA /* SchnellTests */,
 				5ACC870A195F587E00B73555 /* Schnell Today Widget */,
+				5AA04C151963520F006442D9 /* SchnellKit */,
+				5AA04C1F1963520F006442D9 /* SchnellKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5AA04C141963520F006442D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA04C1E1963520F006442D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5ACC8709195F587E00B73555 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,6 +552,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5AA04C111963520F006442D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA04C1C1963520F006442D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA04C281963520F006442D9 /* SchnellKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5ACC8707195F587E00B73555 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,6 +603,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5AA04C231963520F006442D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA04C151963520F006442D9 /* SchnellKit */;
+			targetProxy = 5AA04C221963520F006442D9 /* PBXContainerItemProxy */;
+		};
+		5AA04C2A1963520F006442D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA04C151963520F006442D9 /* SchnellKit */;
+			targetProxy = 5AA04C291963520F006442D9 /* PBXContainerItemProxy */;
+		};
+		5AA04C2E1963520F006442D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA04C151963520F006442D9 /* SchnellKit */;
+			targetProxy = 5AA04C2D1963520F006442D9 /* PBXContainerItemProxy */;
+		};
+		5AA04C3719635210006442D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA04C151963520F006442D9 /* SchnellKit */;
+			targetProxy = 5AA04C3619635210006442D9 /* PBXContainerItemProxy */;
+		};
 		5ACC8717195F587E00B73555 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5ACC870A195F587E00B73555 /* Schnell Today Widget */;
@@ -439,6 +652,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5AA04C2F1963520F006442D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SchnellKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5AA04C301963520F006442D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SchnellKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AA04C311963520F006442D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SchnellKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AA04C321963520F006442D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SchnellKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5ACC871B195F587E00B73555 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -603,6 +892,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5AA04C331963520F006442D9 /* Build configuration list for PBXNativeTarget "SchnellKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA04C2F1963520F006442D9 /* Debug */,
+				5AA04C301963520F006442D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5AA04C351963520F006442D9 /* Build configuration list for PBXNativeTarget "SchnellKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA04C311963520F006442D9 /* Debug */,
+				5AA04C321963520F006442D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5ACC871D195F587E00B73555 /* Build configuration list for PBXNativeTarget "Schnell Today Widget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -610,6 +915,7 @@
 				5ACC871C195F587E00B73555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AF3097E193E621200031EDA /* Build configuration list for PBXProject "Schnell" */ = {
 			isa = XCConfigurationList;
