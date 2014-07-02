@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SchnellKit
 
 class SectionsViewController: UITableViewController {
     var viewModel = SectionsViewModel()

@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A164EB11947A228009E0F40 /* RoadSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A164EB01947A228009E0F40 /* RoadSection.swift */; };
 		5A164EB41947A82C009E0F40 /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A164EB31947A82C009E0F40 /* sections.json */; };
-		5A164EB51948FFAC009E0F40 /* RoadSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A164EB01947A228009E0F40 /* RoadSection.swift */; };
-		5A3B252B19422C5A00838EF4 /* OD3API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252A19422C5A00838EF4 /* OD3API.swift */; };
 		5A3B252E194397EA00838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
 		5A3B253019439AA400838EF4 /* SectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */; };
 		5A3B253119439AF100838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
 		5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B25331945001C00838EF4 /* SectionCell.swift */; };
+		5A7EE7AC1964A59F0085BA13 /* OD3API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7AA1964A59F0085BA13 /* OD3API.swift */; };
+		5A7EE7AD1964A59F0085BA13 /* OD3API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7AA1964A59F0085BA13 /* OD3API.swift */; };
+		5A7EE7AE1964A59F0085BA13 /* RoadSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7AB1964A59F0085BA13 /* RoadSection.swift */; };
+		5A7EE7AF1964A59F0085BA13 /* RoadSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7AB1964A59F0085BA13 /* RoadSection.swift */; };
+		5A7EE7B21964A5C20085BA13 /* RoadSectionPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7B01964A5C20085BA13 /* RoadSectionPointTests.swift */; };
+		5A7EE7B31964A5C20085BA13 /* RoadSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7B11964A5C20085BA13 /* RoadSectionTests.swift */; };
 		5AA04C1B1963520F006442D9 /* SchnellKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA04C1A1963520F006442D9 /* SchnellKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AA04C211963520F006442D9 /* SchnellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA04C161963520F006442D9 /* SchnellKit.framework */; };
-		5AA04C281963520F006442D9 /* SchnellKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA04C271963520F006442D9 /* SchnellKitTests.swift */; };
 		5AA04C2B1963520F006442D9 /* SchnellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA04C161963520F006442D9 /* SchnellKit.framework */; };
 		5AA04C2C1963520F006442D9 /* SchnellKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA04C161963520F006442D9 /* SchnellKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		5AC2D9CC194A4653002A5965 /* RoadSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */; };
 		5ACC870E195F587E00B73555 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACC870D195F587E00B73555 /* NotificationCenter.framework */; };
 		5ACC8713195F587E00B73555 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACC8712195F587E00B73555 /* TodayViewController.swift */; };
 		5ACC8715195F587E00B73555 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACC8714195F587E00B73555 /* MainInterface.storyboard */; };
 		5ACC8718195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */; };
-		5AD6B892194CDE570092F41E /* RoadSectionPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */; };
 		5AE8A54C1940F47D00471532 /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8A54B1940F47D00471532 /* SectionsViewController.swift */; };
 		5AF30989193E621200031EDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF30988193E621200031EDA /* AppDelegate.swift */; };
 		5AF3098E193E621200031EDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF3098C193E621200031EDA /* Main.storyboard */; };
@@ -55,6 +55,20 @@
 			remoteInfo = SchnellKit;
 		};
 		5AA04C3619635210006442D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA04C151963520F006442D9;
+			remoteInfo = SchnellKit;
+		};
+		5AA04C3819635210006442D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA04C151963520F006442D9;
+			remoteInfo = SchnellKit;
+		};
+		5AA04C3A19635210006442D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5AF3097B193E621200031EDA /* Project object */;
 			proxyType = 1;
@@ -110,25 +124,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5A164EB01947A228009E0F40 /* RoadSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSection.swift; sourceTree = "<group>"; };
 		5A164EB31947A82C009E0F40 /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sections.json; sourceTree = "<group>"; };
-		5A3B252A19422C5A00838EF4 /* OD3API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OD3API.swift; sourceTree = "<group>"; };
 		5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewModel.swift; sourceTree = "<group>"; };
 		5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
 		5A3B25331945001C00838EF4 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		5A7EE7AA1964A59F0085BA13 /* OD3API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OD3API.swift; sourceTree = "<group>"; };
+		5A7EE7AB1964A59F0085BA13 /* RoadSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSection.swift; sourceTree = "<group>"; };
+		5A7EE7B01964A5C20085BA13 /* RoadSectionPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionPointTests.swift; sourceTree = "<group>"; };
+		5A7EE7B11964A5C20085BA13 /* RoadSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionTests.swift; sourceTree = "<group>"; };
 		5AA04C161963520F006442D9 /* SchnellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SchnellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA04C191963520F006442D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AA04C1A1963520F006442D9 /* SchnellKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchnellKit.h; sourceTree = "<group>"; };
 		5AA04C201963520F006442D9 /* SchnellKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchnellKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA04C261963520F006442D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AA04C271963520F006442D9 /* SchnellKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchnellKitTests.swift; sourceTree = "<group>"; };
-		5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionTests.swift; sourceTree = "<group>"; };
 		5ACC870B195F587E00B73555 /* com.justabeech.Schnell.Schnell-Today-Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "com.justabeech.Schnell.Schnell-Today-Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACC870D195F587E00B73555 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		5ACC8711195F587E00B73555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ACC8712195F587E00B73555 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		5ACC8714195F587E00B73555 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
-		5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionPointTests.swift; sourceTree = "<group>"; };
 		5AE8A54B1940F47D00471532 /* SectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
 		5AF30983193E621200031EDA /* Schnell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schnell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF30987193E621200031EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,15 +202,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5A3B252919422BCB00838EF4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5A3B252A19422C5A00838EF4 /* OD3API.swift */,
-				5A164EB01947A228009E0F40 /* RoadSection.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		5A3B252C194397C100838EF4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,9 +218,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		5A7EE7A91964A59F0085BA13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A7EE7AA1964A59F0085BA13 /* OD3API.swift */,
+				5A7EE7AB1964A59F0085BA13 /* RoadSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5AA04C171963520F006442D9 /* SchnellKit */ = {
 			isa = PBXGroup;
 			children = (
+				5A7EE7A91964A59F0085BA13 /* Models */,
 				5AA04C1A1963520F006442D9 /* SchnellKit.h */,
 				5AA04C181963520F006442D9 /* Supporting Files */,
 			);
@@ -234,7 +248,8 @@
 		5AA04C241963520F006442D9 /* SchnellKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5AA04C271963520F006442D9 /* SchnellKitTests.swift */,
+				5A7EE7B01964A5C20085BA13 /* RoadSectionPointTests.swift */,
+				5A7EE7B11964A5C20085BA13 /* RoadSectionTests.swift */,
 				5AA04C251963520F006442D9 /* Supporting Files */,
 			);
 			path = SchnellKitTests;
@@ -310,7 +325,6 @@
 		5AF30985193E621200031EDA /* Schnell */ = {
 			isa = PBXGroup;
 			children = (
-				5A3B252919422BCB00838EF4 /* Models */,
 				5A164EB21947A82C009E0F40 /* Resources */,
 				5AE8A54A1940F05100471532 /* ViewControllers */,
 				5A3B252C194397C100838EF4 /* ViewModels */,
@@ -336,8 +350,6 @@
 			children = (
 				5AF30999193E621200031EDA /* Supporting Files */,
 				5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */,
-				5AC2D9CB194A4653002A5965 /* RoadSectionTests.swift */,
-				5AD6B891194CDE570092F41E /* RoadSectionPointTests.swift */,
 			);
 			path = SchnellTests;
 			sourceTree = "<group>";
@@ -395,6 +407,8 @@
 			dependencies = (
 				5AA04C231963520F006442D9 /* PBXTargetDependency */,
 				5AA04C3719635210006442D9 /* PBXTargetDependency */,
+				5AA04C3919635210006442D9 /* PBXTargetDependency */,
+				5AA04C3B19635210006442D9 /* PBXTargetDependency */,
 			);
 			name = SchnellKitTests;
 			productName = SchnellKitTests;
@@ -556,6 +570,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7EE7AC1964A59F0085BA13 /* OD3API.swift in Sources */,
+				5A7EE7AE1964A59F0085BA13 /* RoadSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +579,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AA04C281963520F006442D9 /* SchnellKitTests.swift in Sources */,
+				5A7EE7B31964A5C20085BA13 /* RoadSectionTests.swift in Sources */,
+				5A7EE7AD1964A59F0085BA13 /* OD3API.swift in Sources */,
+				5A7EE7B21964A5C20085BA13 /* RoadSectionPointTests.swift in Sources */,
+				5A7EE7AF1964A59F0085BA13 /* RoadSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,9 +601,7 @@
 				5AF30989193E621200031EDA /* AppDelegate.swift in Sources */,
 				5AE8A54C1940F47D00471532 /* SectionsViewController.swift in Sources */,
 				5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */,
-				5A164EB11947A228009E0F40 /* RoadSection.swift in Sources */,
 				5A3B252E194397EA00838EF4 /* SectionsViewModel.swift in Sources */,
-				5A3B252B19422C5A00838EF4 /* OD3API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,11 +609,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A164EB51948FFAC009E0F40 /* RoadSection.swift in Sources */,
-				5AD6B892194CDE570092F41E /* RoadSectionPointTests.swift in Sources */,
 				5A3B253019439AA400838EF4 /* SectionViewModelTests.swift in Sources */,
 				5A3B253119439AF100838EF4 /* SectionsViewModel.swift in Sources */,
-				5AC2D9CC194A4653002A5965 /* RoadSectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +636,16 @@
 			isa = PBXTargetDependency;
 			target = 5AA04C151963520F006442D9 /* SchnellKit */;
 			targetProxy = 5AA04C3619635210006442D9 /* PBXContainerItemProxy */;
+		};
+		5AA04C3919635210006442D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA04C151963520F006442D9 /* SchnellKit */;
+			targetProxy = 5AA04C3819635210006442D9 /* PBXContainerItemProxy */;
+		};
+		5AA04C3B19635210006442D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA04C151963520F006442D9 /* SchnellKit */;
+			targetProxy = 5AA04C3A19635210006442D9 /* PBXContainerItemProxy */;
 		};
 		5ACC8717195F587E00B73555 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -899,6 +923,7 @@
 				5AA04C301963520F006442D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AA04C351963520F006442D9 /* Build configuration list for PBXNativeTarget "SchnellKitTests" */ = {
 			isa = XCConfigurationList;
@@ -907,6 +932,7 @@
 				5AA04C321963520F006442D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ACC871D195F587E00B73555 /* Build configuration list for PBXNativeTarget "Schnell Today Widget" */ = {
 			isa = XCConfigurationList;

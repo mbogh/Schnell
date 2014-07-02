@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SchnellKit
 
 class SectionsViewModel {
     var sections = RoadSection[]()
