@@ -12,6 +12,8 @@ class SectionCell: UITableViewCell {
     @IBOutlet var addressLabel: UILabel
     @IBOutlet var zipcodeCityLabel: UILabel
     
+    
+    
     class func estimatedHeight() -> CGFloat {
         return 60
     }

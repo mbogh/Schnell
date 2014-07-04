@@ -11,7 +11,8 @@
 		5A3B252E194397EA00838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
 		5A3B253019439AA400838EF4 /* SectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */; };
 		5A3B253119439AF100838EF4 /* SectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */; };
-		5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B25331945001C00838EF4 /* SectionCell.swift */; };
+		5A43958C196746F1007AC92E /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43958B196746F1007AC92E /* SectionCell.swift */; };
+		5A43958F19674CC9007AC92E /* SwiftAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43958E19674CC9007AC92E /* SwiftAutoLayout.swift */; };
 		5A7EE7AC1964A59F0085BA13 /* OD3API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7AA1964A59F0085BA13 /* OD3API.swift */; };
 		5A7EE7AD1964A59F0085BA13 /* OD3API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7AA1964A59F0085BA13 /* OD3API.swift */; };
 		5A7EE7AE1964A59F0085BA13 /* RoadSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EE7AB1964A59F0085BA13 /* RoadSection.swift */; };
@@ -127,7 +128,8 @@
 		5A164EB31947A82C009E0F40 /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sections.json; sourceTree = "<group>"; };
 		5A3B252D194397EA00838EF4 /* SectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewModel.swift; sourceTree = "<group>"; };
 		5A3B252F19439AA400838EF4 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
-		5A3B25331945001C00838EF4 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		5A43958B196746F1007AC92E /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		5A43958E19674CC9007AC92E /* SwiftAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftAutoLayout.swift; sourceTree = "<group>"; };
 		5A7EE7AA1964A59F0085BA13 /* OD3API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OD3API.swift; sourceTree = "<group>"; };
 		5A7EE7AB1964A59F0085BA13 /* RoadSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSection.swift; sourceTree = "<group>"; };
 		5A7EE7B01964A5C20085BA13 /* RoadSectionPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadSectionPointTests.swift; sourceTree = "<group>"; };
@@ -213,9 +215,24 @@
 		5A3B25321945000100838EF4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5A3B25331945001C00838EF4 /* SectionCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5A43958A196746D9007AC92E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A43958B196746F1007AC92E /* SectionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A43958D19674CC9007AC92E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5A43958E19674CC9007AC92E /* SwiftAutoLayout.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		5A7EE7A91964A59F0085BA13 /* Models */ = {
@@ -230,6 +247,8 @@
 		5AA04C171963520F006442D9 /* SchnellKit */ = {
 			isa = PBXGroup;
 			children = (
+				5A43958D19674CC9007AC92E /* Utilities */,
+				5A43958A196746D9007AC92E /* Views */,
 				5A7EE7A91964A59F0085BA13 /* Models */,
 				5AA04C1A1963520F006442D9 /* SchnellKit.h */,
 				5AA04C181963520F006442D9 /* Supporting Files */,
@@ -570,6 +589,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A43958F19674CC9007AC92E /* SwiftAutoLayout.swift in Sources */,
+				5A43958C196746F1007AC92E /* SectionCell.swift in Sources */,
 				5A7EE7AC1964A59F0085BA13 /* OD3API.swift in Sources */,
 				5A7EE7AE1964A59F0085BA13 /* RoadSection.swift in Sources */,
 			);
@@ -600,7 +621,6 @@
 			files = (
 				5AF30989193E621200031EDA /* AppDelegate.swift in Sources */,
 				5AE8A54C1940F47D00471532 /* SectionsViewController.swift in Sources */,
-				5A3B25341945001C00838EF4 /* SectionCell.swift in Sources */,
 				5A3B252E194397EA00838EF4 /* SectionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
