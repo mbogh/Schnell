@@ -17,9 +17,8 @@ class SectionsViewModel {
         self.isActivated = true
         
         let reponseData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("sections", ofType: "json"))
-        let error: NSErrorPointer?
         
-        if let response = NSJSONSerialization.JSONObjectWithData(reponseData, options: NSJSONReadingOptions(), error: error!) as? NSDictionary {
+        if let response = NSJSONSerialization.JSONObjectWithData(reponseData, options: nil, error: nil) as? NSDictionary {
             if let result = response["result"] as? NSDictionary {
                 if let records = result["records"] as? NSArray {
                     for (var i = 0; i < records.count; i++) {
