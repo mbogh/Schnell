@@ -17,7 +17,7 @@ class SectionsViewController: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = SectionCell.estimatedHeight()
+        self.tableView.estimatedRowHeight = SectionCell.estimatedHeight
         
         viewModel.activate()
         self.tableView.reloadData()
