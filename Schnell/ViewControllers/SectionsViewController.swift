@@ -11,7 +11,7 @@ import SchnellKit
 
 class SectionsViewController: UITableViewController {
     var viewModel = SectionsViewModel()
-    var favoriteSections = Int[]()
+    var favoriteSections = [Int]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
